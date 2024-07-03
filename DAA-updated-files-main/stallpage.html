@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stallpage.css" rel="stylesheet">
+    <title>Stall Search Bar
+    </title>
+
+</head>
+
+
+<body>
+    <!-- top bar pup lagoon food stalls-->
+    <div class="top"> 
+        <img class="topnav" src="daaimages/Top Nav (1).png">
+    </div>
+
+     <!-- red rectangle with search bar -->
+
+     
+
+    <div class="searchtop">
+        <img class="redrec" src="daaimages/Rectangle 27.png"> 
+    </div>
+
+    <div class="searchbar">
+        <a class="searchbystall"> Search by Stall </a>
+        <input class="searchbox" type="text" placeholder="Enter item or stall you are looking for">
+        <button class="searchbutton">Search Now</button>
+    </div>
+
+    
+   
+    <style>
+      
+      /* Styles for blurred buttons */
+      .blur {
+        filter: blur(5px);
+        opacity: 0.5;
+        pointer-events: none;
+      }
+    </style>
+    </head>
+    <body>
+    
+    <div class="foodcategory">
+      <p class="food"><b>Food Categories</b></p>
+      <img class="foodcatpic" src="daaimages/Ellipse 1 (3).png"> <button class="foodcatbutton" onclick="filterStalls('Food')">Food</button>
+      <img class="foodcatpic" src="daaimages/Ellipse 1 (1).png"> <button class="bevcatbutton" onclick="filterStalls('Beverages')">Beverages</button>
+      <img class="foodcatpic" src="daaimages/Ellipse 1 (2).png"> <button class="dessertcatbutton" onclick="filterStalls('Desserts')">Desserts</button>
+    </div>
+    
+    <fieldset class="row1"> 
+      <div class="stallfield">
+        <img src="daaimages/Rectangle 338.png" alt="shake">
+        <a href="stall1.html">
+          <button data-category="Beverages" class="btn1">Stall 1- Virgin Shake</button></a>
+      </div>
+
+      <div class="stallfield">
+        <img src="daaimages/Rectangle 340.png" alt="chicken">
+        <a href="stall2food.html">
+        <button class="btn2" data-category="Food">Stall 2- Chickenlicious</button>
+        </a>
+      </div>
+    </fieldset>
+    
+    <fieldset class="row2"> 
+      <div class="stallfield">
+        <img src="daaimages/Rectangle 342.png" alt="rice">
+        <a href="stall3bev.html">
+        <button onclick="" class="btn3" data-category="Food, Beverages">Stall 3- Puroy's Eatery</button> 
+        </a>
+
+        
+      </div>
+      <div class="stallfield">
+        <img src="daaimages/Rectangle 344.png" alt="snacks">
+        <a href="stall4bev.html"> 
+        <button class="btn4" data-category="Food, Beverages, Dessert">Stall 4- JIB Food and Snacks</button>
+       </a>
+      </div>
+    </fieldset>
+    
+    <fieldset class="row3"> 
+      <div class="stallfield">
+        <img src="daaimages/Rectangle 346.png" alt="silog">
+        <a href="stall5food.html">
+        <button class="btn5" data-category="Food, Desserts">Stall 5-Cosina Manila</button>
+      </a>
+      </div>
+      <div class="stallfield">
+        <img src="daaimages/Rectangle 348.png" alt="waffle">
+        <a href="stall6food.html">
+          <button class="btn6" data-category="Food">Stall 6- Waffle Time</button>
+        </a>
+      </div>
+    </fieldset>
+    
+    <script>
+
+      
+      function filterStalls(category) {
+        // Get all stall buttons
+        const stallButtons = document.querySelectorAll('.stallfield button');
+        
+        // Get all foodcatpic images
+        const foodCatPics = document.querySelectorAll('.foodcatpic');
+        
+        // Loop through each button and apply blur based on category
+        stallButtons.forEach(button => {
+          const buttonCategories = button.getAttribute('data-category').split(',').map(cat => cat.trim());
+          if (buttonCategories.includes(category) || category === 'All') {
+            button.classList.remove('blur');
+          } else {
+            button.classList.add('blur');
+          }
+        });
+        
+        // Loop through each foodcatpic and apply blur based on category
+        foodCatPics.forEach(pic => {
+          const picCategory = pic.nextElementSibling.textContent.trim();
+          if (picCategory === category || category === 'All') {
+            pic.classList.remove('blur');
+          } else {
+            pic.classList.add('blur');
+          }
+        });
+      }
+    </script>
+    
+    
+    </body>
+    </html>
+    
+              
+
+   
+
+    
+   
+</body>
+</html>

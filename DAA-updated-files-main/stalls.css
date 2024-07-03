@@ -1,0 +1,244 @@
+body {
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* top bar pup lagoon food stalls*/
+
+.topnav{
+    width: 1535px;
+}
+
+.redrec {
+    width: 1535px;
+    height: 100px;
+}
+
+/* red rectangle with search bar*/
+.searchtop {
+   display: flex; 
+   margin-top: -50px;
+}
+
+.searchbox {
+    border-color: white;
+    background-color: #952323;
+    border-style: solid;
+    box-shadow: 0px 2px 7px -1px rgba(0, 57, 85, 0.50); 
+    width: 550px;
+    height: 40px;
+    border-radius: 10px;
+    text-indent: 10px;
+    color: white;
+    opacity: 80%;
+    font-size: 20px;
+    
+}
+
+.searchbystall {
+    font-size: 25px;
+    padding-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    opacity: 80%;
+    
+}
+
+::placeholder {
+    color: white;
+    opacity: 50%;
+    font-size: 20px;
+}
+
+.searchbar {
+    position: absolute;
+    top: 85px;
+    left: 320px;
+}
+
+.searchbutton {
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 10px;
+    border-style: solid;
+    background-color: #FFBD59 ;
+    border-color: #FFBD59;
+    color: white;
+    margin-left: 20px;
+}
+
+.searchbutton:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.searchbutton:active {
+    color: black;
+ 
+}
+
+/*food categories pictures*/
+
+
+.foodcatpic {
+    height: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.foodcatbutton {
+    width: 100px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #FFC671;
+    background-color: #FFC671;
+    box-shadow: 0px 2px 7px -1px rgba(0, 57, 85, 0.50); 
+    color: black;
+    font-size: 18px;
+    margin: 0px 2px 10px 0px;
+}
+
+.foodcatbutton:hover, .backbutton:hover, .cartbutton:hover {
+   opacity: 80%;
+}
+
+.foodcatbutton:active {
+    color: white;
+}
+
+.backbutton:active, .cartbutton:active
+{
+    color: black;
+}
+
+.food {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  #952323;
+    margin-left: 20px;
+}
+
+.foodcategory {
+    margin: 10px 20px 20px 10px;
+    align-items: center;
+    display: flex;
+    position: relative;
+    left: 250px;
+}
+
+/*back to food category button */
+
+.backbutton, .cartbutton {
+    background-color: #952323;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 2px 7px -1px rgba(0, 57, 85, 0.50); 
+    border-style: solid;
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.back {
+    margin-top: 10px;
+    margin-left: 40px;
+    display: inline-block;
+
+}
+
+/*proceed to cart category button */
+
+.cart {
+    margin-top: 10px;
+    margin-left: 1050px;
+    display: inline-block;
+}
+
+
+/*food display */
+
+.items {
+    display: flex;
+    margin-left: 150px;
+}
+
+.items2 {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.items3 {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.items4 {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.items5 {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+
+.stallnumber {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #952323;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.foodtype {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+}
+
+.addtocart {
+    background-color: #FFC671;
+    border-radius: 5px;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+    width: 150px;
+}
+
+.addtocart:hover {
+    opacity: 80%;
+ }
+ 
+ .addtocart:active {
+     color: white;
+ }
+
+ .foods, .foods2 {
+    margin-right: 20px;
+    margin-left: 10px;
+    background-color: #F6F5F2;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+
