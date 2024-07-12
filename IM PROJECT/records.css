@@ -323,19 +323,6 @@ p{
     margin-left: 350px;
 }
 
-/*checkbox settings*/
-
-
-.cbox1{
-    height: 30px;
-    width: 30px;
-    margin-top: 20px;
-    margin-left: 30px;
-    border: none;
-    box-shadow: 0px 2px 7px -1px rgba(0, 57, 85, 0.50); 
-    border-radius: 5px; backdrop-filter: blur(40px);
-    position: absolute;
-}
 
 
 /* category buttons settings */
@@ -370,19 +357,35 @@ p{
 /*gray rectangles for tables settings*/
 
 
-.adminrec {
+.rectangles {
+    position: relative;
+}
+
+.adminrec, .adminrec1 {
     margin-left: 10px;
-    overflow-y: auto;
+    margin-bottom: 10px; /* Adjust margin-bottom as needed */
+}
+
+.adminrec {
+    overflow-y: auto; /* Add overflow-y if necessary */
 }
 
 .adminrec1 {
-    margin-left: 10px;
-    margin-top: 70px;
-    
+    margin-top: 70px; /* Adjust margin-top as needed */
 }
 
-.rectangles {
-    position: relative;
+/*checkbox settings */
+
+.cbox1 {
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border: none;
+    box-shadow: 0px 2px 7px -1px rgba(0, 57, 85, 0.50); 
+    border-radius: 5px;
+    backdrop-filter: blur(40px); /* Example backdrop-filter */
+    position: absolute;
 }
 
 
