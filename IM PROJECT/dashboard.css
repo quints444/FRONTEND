@@ -251,7 +251,8 @@ p{
     margin-bottom: 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    padding-left: 110px;
+    padding-left: 150px;
+    margin-left: 15px;
     
   
 }
@@ -278,48 +279,48 @@ p{
     
 }
 
-.tablerecord1 {
-    display: flex;
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 830px;
+
+
+.table-container {
+    position: relative; /* Ensure absolute positioning is relative to this container */
+
+    /* Position each tablerecord div */
 }
 
-.tablerecord2 {
-    display: flex;
+.table-container .tablerecord1 {
     position: absolute;
-    margin-top: 95px;
-    margin-left: 830px;
-    
+    top: 20px;
+    left: 830px;
 }
 
-.tablerecord3 {
-    display: flex;
+.table-container .tablerecord2 {
     position: absolute;
-    margin-top: 170px;
-    margin-left: 830px;
+    top: 95px;
+    left: 830px;
 }
 
-.tablerecord4 {
-    display: flex;
+.table-container .tablerecord3 {
     position: absolute;
-    margin-top: 245px;
-    margin-left: 830px;
+    top: 170px;
+    left: 830px;
 }
 
-
-.tablerecord5 {
-    display: flex;
+.table-container .tablerecord4 {
     position: absolute;
-    margin-top: 315px;
-    margin-left: 830px;
+    top: 245px;
+    left: 830px;
 }
 
-.tablerecord6 {
-    display: flex;
+.table-container .tablerecord5 {
     position: absolute;
-    margin-top: 380px;
-    margin-left: 830px;
+    top: 315px;
+    left: 830px;
+}
+
+.table-container .tablerecord6 {
+    position: absolute;
+    top: 380px;
+    left: 830px;
 }
 
 
